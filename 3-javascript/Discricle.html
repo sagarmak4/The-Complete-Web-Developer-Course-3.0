@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Javascript
+
+    </title>
+    <style type="text/css">
+        .cricle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            float: left;
+            margin: 50px;
+        }
+
+        #red-cricle {
+            background-color: red;
+        }
+
+        #blue-cricle {
+            background-color: blue;
+        }
+
+        #yellow-cricle {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>  
+    <div class="cricle" id="red-cricle"></div>
+    <div class="cricle" id="blue-cricle"></div>
+    <div class="cricle" id="yellow-cricle"></div>
+    <script type="text/Javascript">
+        document.getElementById("red-cricle").onclick = function(){
+            document.getElementById("red-cricle").style.display = "none";
+        }
+
+        document.getElementById("blue-cricle").onclick = function(){
+            document.getElementById("blue-cricle").style.display = "none";
+        }
+
+        document.getElementById("yellow-cricle").onclick = function(){
+            document.getElementById("yellow-cricle").style.display = "none":
+        }
+    </script>
+</body>
+
+</html>

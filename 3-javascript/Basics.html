@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript</title>
+</head>
+
+<body>
+    <input type="text" id="textinput">
+    <button id="textchanger">change the value</button>
+    <p id="text2">This is sometext</p>
+
+
+    <script type="text/Javascript">
+            /* document.getElementById("textchanger").onclick = function(){
+                 var textEntered = "";
+                 textEntered = document.getElementById("textinput").value;
+                 alert(textEntered);
+                 document.getElementById("text2").innerHTML = textEntered;
+             }
+            */
+           
+            var myArray = new Array();
+             myArray[0] = "pizzza";
+             myArray[1] = "cake";
+
+             console.log(myArray);
+
+
+             var tweets = ["morning everyone", "i love coffee"];
+             alert(tweets[1]);
+             tweets.push("back to work");
+             tweets.splice(1,0,"cornfakes for brekfast") //edit and deleted functions (index , deleted, add)
+             console.log(tweets);
+        </script>
+</body>
+
+</html>

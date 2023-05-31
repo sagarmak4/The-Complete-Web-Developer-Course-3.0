@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+    <body>
+        <p>This is magic?</p>
+        <p><input id="magic" type="type/text"></p>
+        <p><button id="checkmagic">Enter</button></p>
+
+
+        <script type="text/Javascript">
+          
+         document.getElementById("checkmagic").onclick = function(){
+            var magicworldEnter = document.getElementById("magic").value;
+            var magicworld = "aaaaaa";
+            if(magicworldEnter == magicworld){
+                alert("yes got it");
+            }else{
+                alert("try agian"); 
+            }
+         }      
+
+        </script>
+    </body>
+</html>

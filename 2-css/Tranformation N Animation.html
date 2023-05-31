@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage with style</title>
+        <style>
+            #box{
+                width: 100px;
+                height: 100px;
+                background-color: antiquewhite;
+                border-radius: 10px;
+                transition: 2s ease-in-out;
+                
+            }
+            #box:hover{
+                /*  transform: translate(50px,50px); 
+                    transform: rotate(40deg); 
+                    transform: scale(2,4); */
+                    transform: skew(20deg,30deg);
+            }
+            #flexbox{
+                display: flex;
+                width: 500px;
+                height: 200px;
+                background-color:aliceblue;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .flexbox-item{
+                background-color: aqua;
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box"></div>
+        <div id="flexbox">
+            <div class="flexbox-item">item1</div>
+            <div class="flexbox-item">item2</div>
+            <div class="flexbox-item">item3</div>
+            <div class="flexbox-item">item4</div>
+        </div>
+    </body>
+</html>

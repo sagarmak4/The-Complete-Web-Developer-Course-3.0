@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Javascript
+    </title>
+</head>
+
+<body>
+    <p id="text">Hello Everyone</p>
+    <button id="mybutton">change text</button>
+
+    <p id="empty">Empty</p>
+    <button id="create">create</button>
+
+    <p id="moretext">This is text</p>
+    <button id="styletext">styletext</button>
+
+    <script type="text/Javascript">
+        document.getElementById('mybutton').onclick = function(){
+            document.getElementById("text").innerHTML = "Hello World"; 
+        }
+
+
+        document.getElementById("create").onclick = function(){
+            document.getElementById("empty").innerHTML = "hii Full"; 
+
+        }
+
+        document.getElementById("styletext").onclick = function(){
+            document.getElementById("moretext").style.fontsize = "50px";
+        }
+    </script>
+</body>
+
+</html>
