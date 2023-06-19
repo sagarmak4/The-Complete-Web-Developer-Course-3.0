@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+              change webcontent & style
+        </title>
+        <script type="text/javascript" src= "jquery-3.7.0.min.js"></script>
+        <style type="text/css">
+            #cricle{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+                margin: 10px;
+            }
+
+            .square{
+                width: 150px;
+                height: 150px;
+                background-color: blueviolet;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cricle"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <p>This is text.</p>
+        <script type="text/javascript">
+             $("#cricle").click(function(){
+             /*$("p").html("Text is change");
+               alert($("p").html());  get element
+             
+             alert($("body").css("width"))
+               $(this).css("display","none");
+               alert("you cilck on cricle")
+               */
+              $(this).animate({width : "400px",heigth : "400px",marginLeft : "100px", marginTop : "100px"},2000);
+
+           })
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            jquery
+        </title>
+        <script type="text/javascript" src= "jquery-3.7.0.min.js"></script>
+        <link href="j-query/jquery-ui-1.13.2/jquery-ui.css" rel="stylesheet">
+        <script src="j-query/jquery-ui-1.13.2/"></script>
+        <style>
+            #cricle{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: red;
+                margin: 10px;
+            }
+
+            .square{
+                width: 150px;
+                height: 150px;
+                background-color: green;
+                margin: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+         <div id="cricle"></div>
+         <div class="square"></div>
+         <div class="square"></div>
+
+         <script type="text/javascript">
+            $("#cricle").click(function(){
+                alert("click on cricle");  
+            });
+
+            $(".square").click(function(){
+                alert("click on square");
+            });
+
+            $("div").click(function(){
+                alert("click on div");
+            })
+         </script> 
+    </body>
+</html>

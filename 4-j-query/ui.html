@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            j-query UI
+        </title>
+        <script type="text/javascript" src= "jquery-3.7.0.min.js"></script>
+        <link href="j-query/jquery-ui-1.13.2/jquery-ui.css" rel="stylesheet">
+        <script src="j-query/jquery-ui-1.13.2/jquery-ui.js"></script> 
+        <style type="text/css">
+            #resizable{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="draggable">Drag Me </Menu></div>
+        <div style="width: 100px; height: 100px; background-color: aqua;">
+          <span>I am </span>
+        </div>  
+
+        <div id="resizable"></div>
+        <script type="text/javascript">
+            $( "#draggable" ).draggable({ axis: "x"});
+            $("#draggable").draggable({axis: "y"});
+            $("span").draggable({containment: "parent"})
+
+            $("#resizable").resizable()
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Fading effect
+        </title>
+        <script type="text/javascript" src= "jquery-3.7.0.min.js"></script>
+        <style type="text/css"> 
+            #hidden{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="text">this is some text</p>
+        <button id="fadout">Fade Out text</button>
+        <p id="hidden">This is text hidden</p>
+        <button id="fadeIn">Fade In text</button>
+         
+        <p id="text2">this is both text</p>
+        <button id="toggle">Toggle</button>
+
+        <script type="text/javascript">
+               $("#fadout").click(function(){
+                 $("#text").fadeOut();
+               })
+
+               $("#fadeIn").click(function(){
+                $("#hidden").fadeIn();
+               })
+
+
+               $("#toggle").click(function(){
+                   if($("#text2").css("display") == "none"){
+                      $("#text2").fadeIn();
+                   }else{
+                      $("#text2").fadeOut();
+                   }
+               })
+        </script>
+    </body>
+</html>
